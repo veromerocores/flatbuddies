@@ -7,14 +7,14 @@
     <style>
        .box{
             margin: 3vw;
-            width: 400px;
-            height: 550px;
+            width: 30%;
+            height: 80%;
             align-items: center;
             justify-content: center;
             text-align: center;
             border: solid;
-            border-width: 1px;
-            border-radius: 30px;
+            border-width: 0.1vw;
+            border-radius: 3vw;
             border-color: black;
         } 
         .container {
@@ -41,23 +41,22 @@
             margin-top: 10%;
             font-size: 1vw;
         }
-           
+        
         .continue1{
-            background-color:  rgb(90, 130, 232);
-            width: 40vw;
-            height: 2.5vw;
+            background-color: #106BD5;
+            width: 22vw;
+            height: 2vw;
             max-width: 270px;
-            margin-left: 65px;
-            margin-top: 20px;
+            margin-top: 10%;
             align-items: center;
-            justify-content: center;
             display: flex;
             margin-top: 2%;
-            border-radius: 15px;
+            border-radius: 1.5vw;
             border: solid;
-            border-width: 0.5px;
+            border-width: 0.05vw;
             cursor: pointer; 
             color: #000;
+            margin-left: 5vw;
         }
         .click1{
             text-decoration: none;
@@ -67,31 +66,32 @@
         }
         .continue2{
             background-color:  white;
-            width: 40vw;
-            height: 2.5vw;
+            width: 22vw;
+            height: 2vw;
             max-width: 270px;
-            margin-left: 65px;
-            margin-top: 20px;
+            margin-top: 10%;
             align-items: center;
-            justify-content: center;
             display: flex;
             margin-top: 2%;
-            border-radius: 15px;
+            border-radius: 1.5vw;
             border: solid;
-            border-width: 0.5px;
+            border-width: 0.05vw;
             cursor: pointer; 
             color: #000;
+            margin-left: 5vw;
         }
         .click2{
             text-decoration: none;
             font-family: Arial, Helvetica, sans-serif;
             font-size: 1vw;
             color: black;
+            margin-left: 5%;
         }
         .toptext1{
             font-family: Arial, Helvetica, sans-serif;
             font-weight: bold;
             margin-top: 2%;
+            font-size: 1.5vw;
         }
         .toptext2{
             font-family: Arial, Helvetica, sans-serif;
@@ -107,8 +107,32 @@
             font-family: Arial, Helvetica, sans-serif;
             color: black;
             position: relative;
-            top: 10px;
-            left: 170px;
+            top: 2%;
+            left: 43%;
+            font-size: 1.2vw;
+        }
+        .iconcontainer{
+            width: 1.6vw;
+            height: 1.6vw;
+            background-color: white;
+            border-radius: 50%;
+            margin-left: 3%;
+            margin-right: 15%;
+            align-items: center;
+            justify-content: center;
+        }
+        .icon{
+            width: 100%;
+            height: auto;
+        }
+        .icon2{
+            width: 80%;
+            height: auto;
+            margin-right: 5%;
+            margin-top: 8%;
+        }
+        .space{
+            margin-right: 1%;
         }
     </style>
 </head>
@@ -120,17 +144,28 @@
                 <img src="FlatBuddies logo2.png" alt="FlatBuddies logo" class="inlogo">
                 <p class="toptext1">Get started</p>
                 <p class="toptext2">By tapping Log In, you agree to our Terms. Learn how we process your data in our Privacy Policy, and Cookie Policy.</p>
-                <div class="continue1">
-                    <a href="profiles.pug" class="click1">Continue with google</a>
-                </div>
-                <div class="continue2">
-                    <a href="profiles.pug" class="click2">Log in with Apple</a>
-                </div>
-                <div class="continue2">
-                    <a href="profiles.pug" class="click2">Log in with email</a>
+                <div>
+                    <div class="continue1">
+                        <div class="iconcontainer">
+                            <img src="google.png" alt="Google icon" class="icon">
+                        </div>
+                        <a href="profiles.pug" class="click1">Continue with Google</a>
+                    </div>
+                    <div class="continue2">
+                        <div class="iconcontainer">
+                            <img src="apple.png" alt="Apple icon" class="icon2">
+                        </div>
+                        <a href="profiles.pug" class="click2">Log in with Apple</a>
+                    </div>
+                    <div class="continue2">
+                        <div class="iconcontainer">
+                            <img src="email.png" alt="Email icon" class="icon2">
+                        </div>
+                        <a href="profiles.pug" class="click2">Log in with email</a>
+                    </div>
                 </div>
                 <div class="register">
-                    <p>Don't have an account yet?</p>
+                    <p class="space">Don't have an account yet?</p>
                     <a href="questionnaire.pug">Register</a>
                 </div>
             </div>
