@@ -126,14 +126,18 @@
         position: relative;
         margin-top: 5%;
         width: 95%;
-        height: auto;
-        z-index: 0;
+        height: 100%;
+        z-index: 0; 
+        object-fit: cover;
       }
 
       .tricont {
-        height: 50%;
         width: auto;
         position: relative;
+        overflow: hidden;
+        display: flex;
+        align-items: flex-start; 
+        height: 100%;
       }
 
       .text {
@@ -222,7 +226,7 @@
         color: inherit;
       }
       .footer-section ul li a:hover{
-        color: rgb(199, 20, 20);
+        color: #FE6941;
       }
       .footer-section img{
         width: 150px;
